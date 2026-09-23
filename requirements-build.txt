@@ -1,0 +1,2 @@
+# Windows x64, CPython 3.13; includes transitive dependencies and hashes.
+-r requirements-build.lock

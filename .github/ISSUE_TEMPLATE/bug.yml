@@ -1,0 +1,24 @@
+name: Bug report
+description: Report an application problem without sharing customer data.
+body:
+  - type: markdown
+    attributes:
+      value: Do not include passwords, cookies, real order numbers, customer names, addresses or history databases.
+  - type: input
+    id: version
+    attributes:
+      label: App version and Windows version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce with synthetic data
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

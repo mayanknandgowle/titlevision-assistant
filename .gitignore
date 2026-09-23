@@ -1,0 +1,32 @@
+# Runtime and local business data
+/data/
+**/browser-profile/
+*.sqlite3
+*.sqlite3-*
+*.db
+*.log
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+# Python and build output
+__pycache__/
+*.py[cod]
+.venv/
+.build-venv/
+.test-deps/
+.test-temp/
+build/
+dist/
+release/
+*.egg-info/
+.coverage
+htmlcov/
+# Local editors and operating system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
