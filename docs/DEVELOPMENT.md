@@ -6,6 +6,8 @@ Windows x64, CPython 3.13, installed Microsoft Edge for offline browser tests. T
 
 Install `requirements-build.lock` with `pip install --require-hashes`. The lock records direct and transitive wheel hashes for this platform. When changing dependencies, update `requirements-build.in`, download matching wheels with `pip download --only-binary=:all: --no-deps -r requirements-build.in --dest <wheel-directory>`, regenerate using `python scripts/lock_wheels.py <wheel-directory>`, and test on a clean environment. Updating a package alone is not sufficient; review its transitive dependencies too.
 
+Dependabot updates GitHub Actions. Python dependency updates are reviewed and regenerated on Windows: the stock pip updater does not resolve this custom Windows-wheel hash lock correctly. Do not accept an automated version edit without regenerating and testing the lock. Review upstream security notices and GitHub dependency alerts regularly.
+
 ## Commands
 
 ```powershell
